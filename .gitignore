@@ -1,0 +1,69 @@
+# ============================================================================
+# SIAP SPPD & RAMPUNG — .gitignore
+# Repository ini TIDAK boleh memuat kredensial apa pun (lihat docs/keamanan.md).
+# ============================================================================
+
+# --- OS junk ---------------------------------------------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# --- Editor ----------------------------------------------------------------
+.vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.swp
+*.swo
+*~
+
+# --- Node / toolchain lokal (tidak dipakai runtime, hanya editor) -----------
+node_modules/
+npm-debug.log*
+yarn-error.log*
+package-lock.json.bak
+
+# --- clasp (Google Apps Script CLI) ----------------------------------------
+# .clasp.json berisi ID project GAS Anda — JANGAN di-commit jika repo publik.
+.clasp.json
+.claspignore.local
+
+# --- Cadangan lokal & log --------------------------------------------------
+*.log
+*.bak
+*.tmp
+*.temp
+/cache/
+/dist/
+/build/
+
+# --- Ekspor database sementara ---------------------------------------------
+/export/*.xlsx
+/export/*.csv
+!/export/.gitkeep
+
+# --- Salinan baseline pengujian manual -------------------------------------
+# Uncomment bila Anda menyimpan screenshot baseline sebagai artefak lokal.
+# /docs/baseline/*.png
+# /docs/baseline/*.jpg
+
+# --- File pribadi -----------------------------------------------------------
+.env
+.env.*
+*.secret
+*.key
+service-account*.json
+google-auth*.json
+
+# --- Skill / agen yang tidak relevan dengan aplikasi ------------------------
+/.agents/
+/.workbuddy-ai/

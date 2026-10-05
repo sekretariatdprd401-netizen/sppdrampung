@@ -1,0 +1,2 @@
+# File ini menonaktifkan pemrosesan Jekyll pada GitHub Pages.
+# Tanpa .nojekyll, nama folder/file yang diawali underscore akan diabaikan.
