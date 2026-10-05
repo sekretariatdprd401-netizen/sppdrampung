@@ -21,7 +21,7 @@
    *
    * CARA MENGISI backendUrl:
    *   1) (Paling mudah) Edit file ini, tempel URL Web App GAS, commit.
-   *        backendUrl: 'https://script.google.com/macros/s/AKfycbXXXX/exec'
+   *        backendUrl: 'https://script.google.com/macros/s/AKfycbzgLaQdK-IrDDt5Sh2smFrheD9wlKLW6D1yd87XQjCOAiR_tCi0P2h09xHAci1B8LA/exec'
    *   2) (Tanpa rebuild) Buka DevTools Console di halaman aplikasi dan jalankan:
    *        SIAP.setBackendUrl('https://script.google.com/macros/s/.../exec');
    *     Nilai disimpan di localStorage browser itu dan MENIMPA config.js.
